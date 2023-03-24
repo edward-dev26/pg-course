@@ -1,0 +1,25 @@
+{
+  "name": "social-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "DATABASE_URL=postgres://eshvetsov@localhost:5432/social-network node-pg-migrate",
+    "migrate:test": "DATABASE_URL=postgres://eshvetsov@localhost:5432/social-network-test node-pg-migrate",
+    "start": "nodemon src/index.js",
+    "test": "jest --no-cache"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dedent": "^0.7.0",
+    "express": "^4.18.2",
+    "jest": "^29.5.0",
+    "node-pg-migrate": "^6.2.2",
+    "nodemon": "^2.0.22",
+    "pg": "^8.10.0",
+    "pg-format": "^1.0.4",
+    "supertest": "^6.3.3"
+  }
+}
